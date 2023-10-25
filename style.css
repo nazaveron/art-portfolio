@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main,
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+
+header {
+    height: 230px;
+    width: 100vw;
+    background-image: url(./images/museo1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #f8fef4;
+    font-size: 90px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+
+section {
+    width: 100vw;
+    margin: 20px;
+}
+
+section h3{
+    color: #cda22b;
+    padding: 30px;
+}
+
+section div>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'art_portfolio';
+    font-size: 22px;
+}
+
+a:hover {
+    background-color: #cda22b;
+    color: #f8fef4;
+}
+
+h3,
+h2,
+p {
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.texto-pizarra{
+    margin-top: 15px;
+    font-size: small;
+    color: gray;
+}
+
+
+
+/* STICKERS */
+
+.slider {
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img {
+    width: 100%;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+
+#canvas {
+    margin-top: 20px;
+    border: 5px solid #cda22b;
+    position: relative;
+}
+
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'art_portfolio';
+    /* Nombre de la fuente personalizado */
+    src: url('./fonts/Red\ Ribbon.otf') format('otf'),
+        /* Formato WOFF2 */
+        /* Formato WOFF */
+        /* Otras propiedades opcionales, como font-weight y font-style, pueden ser definidas aquí */
+}
